@@ -1,65 +1,22 @@
-body, html {
+body {
   margin: 0;
-  padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: Arial, sans-serif;
   color: white;
-}
-
-.video-bg {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  overflow: hidden;
-}
-
-#bgVideo {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.logo {
-  height: 60px;
-  margin: 10px 20px;
-}
-
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 40px;
-  background: rgba(0, 128, 0, 0.5);
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-  transition: 0.3s;
-}
-
-nav ul li a:hover {
-  color: #aaffaa;
-}
-
-.centered {
   text-align: center;
-  margin-top: 20%;
+  padding: 100px 20px;
 }
 
-.centered h1 {
-  font-size: 40px;
-  margin-bottom: 10px;
+.container {
+  position: relative;
+  z-index: 1;
 }
 
-.centered p {
-  font-size: 20px;
+#bg-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index: -1;
+  object-fit: cover;
 }
